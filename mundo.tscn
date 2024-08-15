@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1p75xjpxy5n4"]
+
+[ext_resource type="PackedScene" uid="uid://ypd5nmwtnlh6" path="res://jugador.tscn" id="1_0ypt6"]
+[ext_resource type="PackedScene" uid="uid://5bktj4j2y2v" path="res://objFijo.tscn" id="2_qfc1q"]
+
+[node name="Mundo" type="Node2D"]
+
+[node name="jugador" parent="." instance=ExtResource("1_0ypt6")]
+position = Vector2(6, 5)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_qfc1q")]
+position = Vector2(216, 9)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_qfc1q")]
+position = Vector2(-171, 149)
